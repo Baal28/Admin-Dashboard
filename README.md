@@ -1,2 +1,2 @@
 # Admin-Dashboard
-Project to put in practica grid from top.
+Project to put in practice grid from top.
