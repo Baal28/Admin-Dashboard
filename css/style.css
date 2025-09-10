@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "roboto";
+  src:
+    url("../fonts/roboto-variablefont_wdthwght-webfont.woff2") format("woff2"),
+    url("../fonts/roboto-variablefont_wdthwght-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /*
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
@@ -20,6 +29,7 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  font-family: "roboto";
 }
 
 img, picture, video, canvas, svg {
@@ -48,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .container{
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 0.8fr 4fr;
     grid-template-rows: 0.7fr 1fr 1fr 1fr;
     height: 100vh;
 }
@@ -57,9 +67,37 @@ h1, h2, h3, h4, h5, h6 {
   grid-column-start: 2;
   grid-row-start: 1;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns:  4.5fr 2fr;
   grid-template-rows: 1fr 1fr;
   background-color: #FFFFFF;
+  padding: 40px;
+  align-items: center;
+  gap: 20px;
+}
+
+.container-header{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.container-header-1{
+  display: grid;
+  grid-template-columns: 0.5fr 10fr;
+  align-items: center;
+}
+
+.container-header-2{
+  display: grid;
+  grid-template-columns: 0.5fr 4fr;
+  align-items: center;
+}
+
+.container-btn{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 50px;
 }
 
 .sidebar{
@@ -71,6 +109,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 15px;
   background-color: #1992D4;
   color: #FFFFFF;
+  gap: 40px;
 }
 
 .main{
@@ -100,7 +139,7 @@ h1, h2, h3, h4, h5, h6 {
 .last{
   display: grid;
   grid-template-columns: 0.4fr 2fr;
-  grid-template-rows: 0.2fr 0.2fr 0.2fr;
+  grid-template-rows: 0.1fr 0.2fr 0.1fr;
   justify-content: start;
   align-items: center;
 }
@@ -112,9 +151,58 @@ h1, h2, h3, h4, h5, h6 {
   
 }
 
+.icon-black{
+  width: 30px;
+  height: 30px;
+}
+
+
+
+.bell{
+  display: grid;
+  justify-self: center;
+}
+
 .icon-dashboard{
   width: 55px;
   height: 55px;
   filter: invert(100%);
 }
 
+#search-input{
+  border: none;
+  border-radius: 20px;
+  background-color: #E2E8F0;
+  padding: 10px;
+  width: 100%;
+}
+
+.ninja-logo{
+  border-radius: 50%;
+  height: 80px;
+}
+
+.ninja-logo-large{
+  border-radius: 50%;
+  height: 100px;
+}
+
+#btn{
+  border: none;
+  background-color: #1992D4;
+  padding: 10px;
+  border-radius: 25px;
+  color:#FFFFFF;
+  font-size: x-large;
+  width: 150px;
+}
+
+p{
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.para{
+  font-weight: 100;
+  font-size: 20px;
+}
