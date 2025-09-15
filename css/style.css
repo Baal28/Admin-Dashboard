@@ -58,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .container{
     display: grid;
-    grid-template-columns: 0.8fr 4fr;
+    grid-template-columns: 0.9fr 4fr;
     grid-template-rows: 0.7fr 1fr 1fr 1fr;
     height: 100vh;
 }
@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5, h6 {
   grid-row-end: 5;
   display: grid;
   grid-template-rows: 0.3fr 1fr 1fr;
-  padding: 15px;
+  padding: 25px;
   background-color: #1992D4;
   color: #FFFFFF;
   gap: 40px;
@@ -117,9 +117,49 @@ h1, h2, h3, h4, h5, h6 {
   grid-row-start: 2;
   grid-row-end: 5;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 4fr 1fr;
   background-color: #E2E8F0;
+  padding: 40px;
+}
+
+/*.card-container{
+  display: inline-grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+*/
+.test{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+  gap: 20px;
+}
+
+.card-container-1{
+  display: grid;
+}
+
+
+.cards{
+  background-color: #FFFFFF;
+  border-radius: 25px;
+  border-left: 8px solid #F0B429;
+  height: 250px;
+  width: 450px;
+  display: grid;
+  padding: 10px;
+}
+
+.trending-cards{
+  background-color: #FFFFFF;
+  border-radius: 25px;
+  border-left: 8px solid #F0B429;
+  height: 320px;
+  width: 380px;
+}
+
+.para-card{
+  font-size: large;
+  color: #707070;
 }
 
 .start{
@@ -205,4 +245,18 @@ p{
 .para{
   font-weight: 100;
   font-size: 20px;
+}
+
+.logo-container{
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  align-items: end;
+  justify-content: end;
+  
+}
+
+.logo-icon{
+  width: 30px;
+  height: 30px;
+  
 }
