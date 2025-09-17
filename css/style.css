@@ -59,8 +59,8 @@ h1, h2, h3, h4, h5, h6 {
 .container{
     display: grid;
     grid-template-columns: 0.9fr 4fr;
-    grid-template-rows: 0.7fr 1fr 1fr 1fr;
-    height: 100vh;
+    grid-template-rows: auto 1fr 1fr;
+    min-height: 100vh;
 }
 
 .header{
@@ -73,6 +73,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 40px;
   align-items: center;
   gap: 20px;
+  box-shadow: 0 10px 15px 5px black;
+  
 }
 
 .container-header{
@@ -110,6 +112,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #1992D4;
   color: #FFFFFF;
   gap: 40px;
+  
 }
 
 .main{
@@ -131,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   
-  gap: 20px;
+  gap: 40px;
 }
 
 .card-container-1{
@@ -149,12 +152,82 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px;
 }
 
-.trending-cards{
+.announcements-container{
   background-color: #FFFFFF;
   border-radius: 25px;
-  border-left: 8px solid #F0B429;
-  height: 320px;
+  padding: 20px;
+  display: grid;
+  gap: 15px;
+  /*
+  max-height: 320px;
   width: 380px;
+  grid-template-rows: 1fr 1fr 1fr;
+  overflow-y: auto;*/ 
+}
+
+.announcement-item{
+  padding-bottom: 15px;
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.announcement-item:last-child{
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.announcement-item h4{
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+}
+
+.trending-cards-1{
+  background-color: #FFFFFF;
+  border-radius: 25px;
+  gap: 10px;
+  padding: 20px;
+  display: grid;
+  /*
+  max-height: 320px;
+  width: 380px;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  overflow-y: auto;*/
+  
+}
+
+.trending-item{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 0;
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.trending-item:last-child{
+  border-bottom: none;
+}
+
+.trending-text h4{
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.trending-text p{
+  font-size: 14px;
+  font-weight: normal;
+  color: #707070;
+  margin: 0;
+  padding: 0;
+}
+
+.trending-logo{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
 }
 
 .para-card{
@@ -219,7 +292,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .ninja-logo{
   border-radius: 50%;
-  height: 80px;
+  height: 70px;
 }
 
 .ninja-logo-large{
@@ -235,6 +308,10 @@ h1, h2, h3, h4, h5, h6 {
   color:#FFFFFF;
   font-size: x-large;
   width: 150px;
+}
+
+#btn:hover{
+  cursor: pointer;
 }
 
 p{
@@ -260,3 +337,4 @@ p{
   height: 30px;
   
 }
+
